@@ -81,9 +81,10 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
 
 :root {
-  --main-text-font: 'Roboto Mono', monospace; 
+  --main-text-font: 'Cairo', sans-serif; 
 }
 
 html {
