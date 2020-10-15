@@ -27248,7 +27248,7 @@ a.pswp__share--download:hover {
   font-weight: bold;
 }
 
-#imp-btn.open::after {
+#imp-btn.closed::after {
   content: "\f107";
   font-family: FontAwesome;
   padding-left: 5px;
@@ -27258,9 +27258,43 @@ a.pswp__share--download:hover {
   font-weight: unset;
 }
 
-#imp-btn.closed::after {
+#imp-btn.open::after {
   content: "\f106";
   font-family: FontAwesome;
   padding-left: 5px;
+}
+
+#lang_options {
+  position: absolute;
+  right: 0;
+  margin-right: 45px;
+  background-color: #162D50;
+  padding: 10px 25px;
+  color: white;
+}
+
+#lang_label {
+  background-color: #162D50;
+  color: white;
+  text-align: right;
+  padding-right: 50px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+#lang_label.closed::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+#lang_label.open::after {
+  content: "\f106";
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+#lang_switch_de {
+  cursor: pointer;
 }
 

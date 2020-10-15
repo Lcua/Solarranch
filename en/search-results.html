@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="wide wow-animation">
-  <head onload="setCurrentScreen(products)">
+  <head>
     <!-- Site Title-->
-    <title>Produkte</title>
+    <title>Search results</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,15 +22,6 @@
       <!-- Page Header-->
       <header class="page-head">
         <!-- RD Navbar-->
-        <span id="lang_bar" class="rd-navbar-inner">
-          <div id="lang_div">
-            <p id="lang_label" class="de_lang" onclick="showLang()">Deutsch</p>
-            <div id="lang_options">
-              <p id="lang_switch_de" onclick="switchLanguage('products')">English</p>
-            </div>
-          </div>
-          
-        </span>
         <div class="rd-navbar-wrap rd-navbar-default">
           <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="100px" data-lg-stick-up-offset="150px" data-auto-height="true" class="rd-navbar">
             <div class="rd-navbar-inner">
@@ -49,15 +40,32 @@
                 <ul class="rd-navbar-nav">
                   <li><a href="index.html">Home</a>
                   </li>
-                  <li class="active"><a href="products.html">Produkte</a>
+                  <li><a href="about.html">About Us</a>
+                    <!-- RD Navbar Dropdown-->
+                    <ul class="rd-navbar-dropdown">
+                      <li><a href="404.html">404 page</a>
+                      </li>
+                      <li><a href="#">FINANCIAL INTEGRITY</a>
+                        <!-- RD Navbar Dropdown-->
+                        <ul class="rd-navbar-dropdown">
+                          <li><a href="#">Page 1</a></li>
+                          <li><a href="#">Page 2</a></li>
+                          <li><a href="#">Page 3</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">OUR MISSION</a>
+                      </li>
+                      <li><a href="#">STATEMENT OF FAITH</a>
+                      </li>
+                      <li><a href="#">OUR TEAM</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li><a href="http://teslaprodukte.solarhafen.com">Speicherprodukte</a>
+                  <li><a href="what-we-do.html">What We Do </a>
                   </li>
-                  <li><a href="partners.html">Partner</a>
+                  <li><a href="news.html">News</a>
                   </li>
-                  <li><a href="https://www.ebay.de/usr/solar.ranch" target="_blank">Shop</a>
-                  </li>
-                  <li><a href="contacts.html">Kontakt</a>
+                  <li><a href="contacts.html">Contacts</a>
                   </li>
                 </ul>
                 <div class="contact-info">
@@ -66,7 +74,7 @@
                       <!--<div class="unit-left"><span class="text-primary-darker">TEL:</span></div>-->
                       <div class="unit-body"><a href="callto:#" class="link link-primary-darker">0171-1864050</a></div>
                     </div>
-                    <a href="mailto:info@solarranch.de" > <p>info@solarranch.de</p> </a>
+                    <p>Solarranch GmbH</p>
                   </address>
                 </div>
               </div>
@@ -76,93 +84,15 @@
       </header>
       <!-- Page Content-->
       <main class="page-content">
-        <section class="section-75 section-sm-top-110 section-sm-bottom-130">
+        <section class="section-75 section-sm-110">
           <div class="shell">
-            <h3>Unsere Produkte</h3>
-            <div class="range range-xs-center range-index text-sm-left offset-sm-top-70">
-              <div class="cell-sm-6">
-                <div class="unit unit-lg-horizontal unit-spacing-md">
-                  <div class="unit-left"><img src="images/smyo3.jpg" alt="" width="270" height="240" class="img-responsive"/>
-                  </div>
-                  <div class="unit-body">
-                    <div class="offset-lg-top--10"></div>
-                    <a href="http://stores.ebay.de/tojatrading/Wechselrichter-/_i.html?_fsub=7930461013" target="_blank" ><h6 class="inset-lg-left-30 text-primary">PV-Wechselrichter</h6></a>
-                    <p class="text-divider">Im PV-Wechselrichter (Inverter) wird der Gleichstrom (DC) der Solarmodule in Wechselstrom (AC) für die Verbraucher im Hausnetz umgewandelt.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-6 offset-top-80 offset-sm-top-0">
-                <div class="unit unit-lg-horizontal unit-spacing-md">
-                  <div class="unit-left"><img src="images/gen24.png" alt="" width="270" height="240" class="img-responsive"/>
-                  </div>
-                  <div class="unit-body">
-                    <div class="offset-lg-top--10"></div>
-                    <a href="#" target="_blank" ><h6 class="inset-lg-left-30 text-primary">Hybrid-Wechselrichter</h6></a>
-                    <p class="text-divider">Der Hybrid-Wechselrichter bietet zusätzlich zum Umwandeln von PV-Strom (DC) in Wechselstrom (AC) die Möglichkeit erzeugten Strom in Batteriespeicher zu laden um ihn dann abzurufen, wenn Sie es brauchen.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-6 offset-top-80">
-                <div class="unit unit-lg-horizontal unit-spacing-md">
-                  <div class="unit-left"><img src="images/BYD Batterie.jpg" alt="" width="270" height="240" class="img-responsive"/>
-                  </div>
-                  <div class="unit-body">
-                    <div class="offset-lg-top--10"></div>
-                    <a href="http://stores.ebay.de/tojatrading/Energy-Speicher-/_i.html?_fsub=55092069013" target="_blank" ><h6 class="inset-lg-left-30 text-primary">Lithium Batterien</h6></a>
-                    <p class="text-divider">Eigenversorgung und Autarkie – zwei Aspekte die für private Haushalte und Gewerbebetriebe immer wichtiger werden.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-6 offset-top-80">
-                <div class="unit unit-lg-horizontal unit-spacing-md">
-                  <div class="unit-left"><img src="images/Solarmodul Schwarz.jpg" alt="" width="270" height="240" class="img-responsive"/>
-                  </div>
-                  <div class="unit-body">
-                    <div class="offset-lg-top--10"></div>
-                    <a href="http://stores.ebay.de/tojatrading/Solarpanel-/_i.html?_fsub=7933098013" target="_blank" ><h6 class="inset-lg-left-30 text-primary">Solarmodule</h6></a>
-                    <p class="text-divider">Mit den Modulen auf dem Hausdach beginnt alles. Mit unseren Modulen von LG, REC, AEG und SunPower treffen sie immer die richtige Wahl.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-6 offset-top-80">
-                <div class="unit unit-lg-horizontal unit-spacing-md">
-                  <div class="unit-left"><img src="images/Foerderung.jpg" alt="" width="270" height="240" class="img-responsive"/>
-                  </div>
-                  <div class="unit-body">
-                    <div class="offset-lg-top--10"></div>
-                      <a href="#" target="_blank" ><h6 class="inset-lg-left-30 text-primary">Staatliche Förderung</h6></a>
-                    <p class="text-divider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veritatis aut molestias? Aliquid unde laborum fuga cupiditate sit.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-6 offset-top-80">
-                <div class="unit unit-lg-horizontal unit-spacing-md">
-                  <div class="unit-left"><img src="images/Komplett.jpg" alt="" width="270" height="240" class="img-responsive"/>
-                  </div>
-                  <div class="unit-body">
-                    <div class="offset-lg-top--10"></div>
-                      <a href="http://stores.ebay.de/tojatrading/Solarpanel-/_i.html?_fsub=7933098013" target="_blank" ><h6 class="inset-lg-left-30 text-primary">Batterieanlage als Komplettlösung</h6></a>
-                    <p class="text-divider">Einfach die gewünschte Kombination auswählen und alles was Sie für die Installation brauchen ist dabei.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <!-- RD Parallax-->
-          <div data-on="false" data-md-on="true" class="rd-parallax">
-            <div data-speed="0.3" data-type="media" data-url="images/parallax-3.jpg" class="rd-parallax-layer"></div>
-            <div data-speed="0.05" data-type="html" class="rd-parallax-layer">
-              <div class="shell section-210 section-sm-top-130 section-sm-bottom-210 text-sm-left" style="height:600px">
-
-              </div>
-            </div>
+            <h3>Search results</h3>
+            <div class="rd-search-results"></div>
           </div>
         </section>
       </main>
-      <!-- Page Footer -->
+      <hr>
+      <!-- Page Footer-->
       <footer class="page-foot">
         <section class="bg-gray-darker section-50 section-sm-top-75 section-sm-bottom-65">
           <div class="shell">

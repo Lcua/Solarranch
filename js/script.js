@@ -1204,6 +1204,8 @@ $document.ready(function () {
 function hideImpressum() {
   document.getElementById("imp-txt").style.display = "none";
   document.getElementById("imp-btn").classList.add("closed");
+  document.getElementById("lang_options").style.display = "none";
+  document.getElementById("lang_label").classList.add("closed");
 }
 
 function showImpressum() {
@@ -1221,3 +1223,38 @@ function showImpressum() {
     console.log("Show Impressum");
   }
 } 
+
+function showLang() {
+  var x = document.getElementById("lang_options");
+  var y = document.getElementById("lang_label");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.classList.remove("open");
+    y.classList.add("closed");
+    console.log("Hide Impressum");
+  } else {
+    x.style.display = "block";
+    y.classList.remove("closed");
+    y.classList.add("open");
+    console.log("Show Impressum");
+  }
+} 
+
+function switchLanguage(currentScreen) {
+  let x = currentScreen;
+
+  if (location.pathname != "/en/"){
+    console.log("gRedirecting to " + x);
+    window.location.href = "en/" + x + ".html";
+  } else if (location.pathname == "/en/"){
+    console.log("Redirecting to " + x);
+    window.location.href = "../" + x + ".html";
+  } else {
+    console.log("Couldn't redirect to " + x);
+  }
+}
+
+
+
+
+
