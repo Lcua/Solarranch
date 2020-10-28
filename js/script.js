@@ -1204,6 +1204,12 @@ $document.ready(function () {
 function hideImpressum() {
   document.getElementById("imp-txt").style.display = "none";
   document.getElementById("imp-btn").classList.add("closed");
+
+  document.getElementById("agb-txt").style.display = "none";
+  document.getElementById("agb-btn").classList.add("closed");
+
+  document.getElementById("wrb-txt").style.display = "none";
+  document.getElementById("wrb-btn").classList.add("closed");
 }
 
 function showImpressum() {
@@ -1215,9 +1221,44 @@ function showImpressum() {
     y.classList.add("closed");
     console.log("Hide Impressum");
   } else {
+    x.style.paddingBottom = "20px";
     x.style.display = "block";
     y.classList.remove("closed");
     y.classList.add("open");
     console.log("Show Impressum");
+  }
+} 
+
+function showAGB() {
+  var x = document.getElementById("agb-txt");
+  var y = document.getElementById("agb-btn");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.classList.remove("open");
+    y.classList.add("closed");
+    console.log("Hide AGB");
+  } else {
+    x.style.paddingBottom = "20px";
+    x.style.display = "block";
+    y.classList.remove("closed");
+    y.classList.add("open");
+    console.log("Show AGB");
+  }
+} 
+
+function showWRB() {
+  var x = document.getElementById("wrb-txt");
+  var y = document.getElementById("wrb-btn");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.classList.remove("open");
+    y.classList.add("closed");
+    console.log("Hide WRB");
+  } else {
+    x.style.paddingBottom = "20px";
+    x.style.display = "block";
+    y.classList.remove("closed");
+    y.classList.add("open");
+    console.log("Show WRB");
   }
 } 

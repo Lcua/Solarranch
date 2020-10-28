@@ -27234,6 +27234,14 @@ a.pswp__share--download:hover {
   .imp-div {
     text-align: left!important;
   }
+
+  .agb-div {
+    text-align: left!important;
+  }
+
+  .wrb-div {
+    text-align: left!important;
+  }
 }
 
 .imp-div {
@@ -27259,6 +27267,64 @@ a.pswp__share--download:hover {
 }
 
 #imp-btn.closed::after {
+  content: "\f106";
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+/* AGB */
+.agb-div {
+  text-align: center;
+}
+
+#agb-btn:hover {
+  cursor: pointer;
+}
+
+#agb-btn.open {
+  font-weight: bold;
+}
+
+#agb-btn.open::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+#agb-btn.closed {
+  font-weight: unset;
+}
+
+#agb-btn.closed::after {
+  content: "\f106";
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+/* WRB */
+.wrb-div {
+  text-align: center;
+}
+
+#wrb-btn:hover {
+  cursor: pointer;
+}
+
+#wrb-btn.open {
+  font-weight: bold;
+}
+
+#wrb-btn.open::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+#wrb-btn.closed {
+  font-weight: unset;
+}
+
+#wrb-btn.closed::after {
   content: "\f106";
   font-family: FontAwesome;
   padding-left: 5px;
