@@ -27240,7 +27240,7 @@ a.pswp__share--download:hover {
   text-align: center;
 }
 
-#imp-btn, #agb-btn, #wrb-btn, #lang_switch_de {
+#imp-btn, #agb-btn, #wrb-btn, #lang_switch {
   cursor: pointer;
 }
 
@@ -27267,7 +27267,7 @@ a.pswp__share--download:hover {
 #lang_options {
   position: absolute;
   right: 0;
-  margin-right: 45px;
+  margin-right: 40px;
   background-color: #162D50;
   padding: 10px 25px;
   color: white;
@@ -27282,7 +27282,10 @@ a.pswp__share--download:hover {
   margin-bottom: 0;
 }
 
-
+#lang_switch {
+  text-decoration: none;
+  color: white;
+}
 
 
 

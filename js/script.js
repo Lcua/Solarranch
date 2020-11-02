@@ -1235,7 +1235,7 @@ function switchLanguage(currentScreen) {
   let x = currentScreen;
 
   if (location.pathname != "/en/"){
-    console.log("gRedirecting to " + x);
+    console.log("Redirecting to " + x);
     window.location.href = "en/" + x + ".html";
   } else if (location.pathname == "/en/"){
     console.log("Redirecting to " + x);
