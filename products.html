@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="wide wow-animation">
-  <head>
+  <head onload="setCurrentScreen(products)">
     <!-- Site Title-->
     <title>Produkte</title>
     <meta name="format-detection" content="telephone=no">
@@ -16,12 +16,21 @@
     <script src="js/html5shiv.min.js"></script>
 		<![endif]-->
   </head>
-  <body onload="hideImpressum()">
+  <body onload="hideStuff()">
     <!-- Page-->
     <div class="page text-center">
       <!-- Page Header-->
       <header class="page-head">
         <!-- RD Navbar-->
+        <span id="lang_bar" class="rd-navbar-inner">
+          <div id="lang_div">
+            <p id="lang_label" class="de_lang" onclick="showXY('lang_options', 'lang_label')">Deutsch</p>
+            <div id="lang_options">
+              <p id="lang_switch_de" onclick="switchLanguage('products')">English</p>
+            </div>
+          </div>
+          
+        </span>
         <div class="rd-navbar-wrap rd-navbar-default">
           <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="100px" data-lg-stick-up-offset="150px" data-auto-height="true" class="rd-navbar">
             <div class="rd-navbar-inner">
@@ -84,7 +93,7 @@
               </div>
               <div class="cell-sm-6 offset-top-80 offset-sm-top-0">
                 <div class="unit unit-lg-horizontal unit-spacing-md">
-                  <div class="unit-left"><img src="images/gen24.png" alt="" width="270" height="240" class="img-responsive"/>
+                  <div class="unit-left"><img src="images/Kostal Hybrid Wechselrichter.jpg" alt="" width="270" height="240" class="img-responsive"/>
                   </div>
                   <div class="unit-body">
                     <div class="offset-lg-top--10"></div>
@@ -95,7 +104,7 @@
               </div>
               <div class="cell-sm-6 offset-top-80">
                 <div class="unit unit-lg-horizontal unit-spacing-md">
-                  <div class="unit-left"><img src="images/Batterie.png" alt="" width="270" height="240" class="img-responsive"/>
+                  <div class="unit-left"><img src="images/BYD Batterie.jpg" alt="" width="270" height="240" class="img-responsive"/>
                   </div>
                   <div class="unit-body">
                     <div class="offset-lg-top--10"></div>
@@ -111,7 +120,7 @@
                   <div class="unit-body">
                     <div class="offset-lg-top--10"></div>
                     <a href="http://stores.ebay.de/tojatrading/Solarpanel-/_i.html?_fsub=7933098013" target="_blank" ><h6 class="inset-lg-left-30 text-primary">Solarmodule</h6></a>
-                    <p class="text-divider">Mit den Modulen auf dem Hausdach beginnt alles. Darum ist hier gleich zu Anfang die richtige Auswahl zu treffen</p>
+                    <p class="text-divider">Mit den Modulen auf dem Hausdach beginnt alles. Mit unseren Modulen von LG, REC, AEG und SunPower treffen sie immer die richtige Wahl.</p>
                   </div>
                 </div>
               </div>
@@ -132,7 +141,7 @@
                   </div>
                   <div class="unit-body">
                     <div class="offset-lg-top--10"></div>
-                      <a href="http://stores.ebay.de/tojatrading/Solarpanel-/_i.html?_fsub=7933098013" target="_blank" ><h6 class="inset-lg-left-30 text-primary">Solaranlagen als Komplettlösung</h6></a>
+                      <a href="https://teslaprodukte.solarhafen.com/" target="_blank" ><h6 class="inset-lg-left-30 text-primary">Batterieanlage als Komplettlösung</h6></a>
                     <p class="text-divider">Einfach die gewünschte Kombination auswählen und alles was Sie für die Installation brauchen ist dabei.</p>
                   </div>
                 </div>
@@ -176,11 +185,11 @@
             </div>
           </div>
           <div class="imp-div shell">
-            <p id="imp-btn" onClick="showImpressum()">Impressum</p>
+            <p id="imp-btn" onClick="showXY('imp-txt', 'imp-btn')">Impressum</p>
             <p  id="imp-txt">Anschrift:<br />C²EX GmbH - Solarranch<br />Kopernikusstr.14<br />30167 Hannover<br />Deutschland<br /><br />Geschäftsführer: Tobias Jankowiak<br /><br />Handelsregisternummer: HRB 215250<br /><br />USt-IDNr.: DE 311934471<br /><br />Telefonnummer: +49 171 1864050<br /><br />E-Mail-Adresse: info@solarranch.de </p>
           </div>
           <div class="agb-div shell">
-            <p id="agb-btn" onClick="showAGB()">AGB</p>
+            <p id="agb-btn" onClick="showXY('agb-txt', 'agb-btn')">AGB</p>
             <p id="agb-txt">Allgemeine Geschäftsbedingungen (AGB)<br /><br />
               Die nachstehenden AGB enthalten zugleich gesetzliche
               Informationen zu Ihren Rechten nach den Vorschriften über
@@ -341,7 +350,7 @@
               Solarranch, ein Unternehmen der C2EX GmbH.</p>
           </div>
           <div class="wrb-div shell">
-            <p id="wrb-btn" onClick="showWRB()">Widerrufsbelehrung</p>
+            <p id="wrb-btn" onClick="showXY('wrb-txt', 'wrb-btn')">Widerrufsbelehrung</p>
             <p id="wrb-txt">Widerrufsbelehrung<br /><br />
               Widerrufsrecht<br />
               Sie können Ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen mittels einer

@@ -27231,48 +27231,63 @@ a.pswp__share--download:hover {
     width: 70%;
   }
 
-  .imp-div {
-    text-align: left!important;
-  }
-
-  .agb-div {
-    text-align: left!important;
-  }
-
-  .wrb-div {
+  .imp-div, .agb-div, .wrb-div {
     text-align: left!important;
   }
 }
 
-.imp-div {
+.imp-div, .agb-div, .wrb-div {
   text-align: center;
 }
 
-#imp-btn:hover {
+#imp-btn, #agb-btn, #wrb-btn, #lang_switch_de {
   cursor: pointer;
 }
 
-#imp-btn.open {
+#imp-btn.open, #agb-btn.open, #wrb-btn.open {
   font-weight: bold;
 }
 
-#imp-btn.open::after {
+#imp-btn.closed::after, #agb-btn.closed::after, #wrb-btn.closed::after, #lang_label.closed::after {
   content: "\f107";
   font-family: FontAwesome;
   padding-left: 5px;
 }
 
-#imp-btn.closed {
+#imp-btn.closed, #agb-btn.closed, #wrb-btn.closed {
   font-weight: unset;
 }
 
-#imp-btn.closed::after {
+#imp-btn.open::after, #agb-btn.open::after, #wrb-btn.open::after, #lang_label.open::after {
   content: "\f106";
   font-family: FontAwesome;
   padding-left: 5px;
 }
 
-/* AGB */
+#lang_options {
+  position: absolute;
+  right: 0;
+  margin-right: 45px;
+  background-color: #162D50;
+  padding: 10px 25px;
+  color: white;
+}
+
+#lang_label {
+  background-color: #162D50;
+  color: white;
+  text-align: right;
+  padding-right: 50px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+/* 
 .agb-div {
   text-align: center;
 }
@@ -27286,10 +27301,11 @@ a.pswp__share--download:hover {
 }
 
 #agb-btn.open::after {
-  content: "\f107";
+  content: "\f106";
   font-family: FontAwesome;
   padding-left: 5px;
 }
+
 
 #agb-btn.closed {
   font-weight: unset;
@@ -27301,7 +27317,9 @@ a.pswp__share--download:hover {
   padding-left: 5px;
 }
 
-/* WRB */
+
+
+
 .wrb-div {
   text-align: center;
 }
@@ -27330,3 +27348,6 @@ a.pswp__share--download:hover {
   padding-left: 5px;
 }
 
+
+
+*/

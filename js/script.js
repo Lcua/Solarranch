@@ -1201,64 +1201,51 @@ $document.ready(function () {
   }
 });
 
-function hideImpressum() {
-  document.getElementById("imp-txt").style.display = "none";
-  document.getElementById("imp-btn").classList.add("closed");
 
-  document.getElementById("agb-txt").style.display = "none";
-  document.getElementById("agb-btn").classList.add("closed");
+function showXY(a, b) {
+  var x = document.getElementById(a);
+  var y = document.getElementById(b);
 
-  document.getElementById("wrb-txt").style.display = "none";
-  document.getElementById("wrb-btn").classList.add("closed");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.classList.remove("open");
+    y.classList.add("closed");
+  } else {
+    x.style.paddingBottom = "20px";
+    x.style.display = "block";
+    y.classList.remove("closed");
+    y.classList.add("open");
+  }
 }
 
-function showImpressum() {
-  var x = document.getElementById("imp-txt");
-  var y = document.getElementById("imp-btn");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    y.classList.remove("open");
-    y.classList.add("closed");
-    console.log("Hide Impressum");
-  } else {
-    x.style.paddingBottom = "20px";
-    x.style.display = "block";
-    y.classList.remove("closed");
-    y.classList.add("open");
-    console.log("Show Impressum");
-  }
-} 
+function hideXY(x, y) {
+  document.getElementById(x).style.display = "none";
+  document.getElementById(y).classList.add("closed");
+}
 
-function showAGB() {
-  var x = document.getElementById("agb-txt");
-  var y = document.getElementById("agb-btn");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    y.classList.remove("open");
-    y.classList.add("closed");
-    console.log("Hide AGB");
-  } else {
-    x.style.paddingBottom = "20px";
-    x.style.display = "block";
-    y.classList.remove("closed");
-    y.classList.add("open");
-    console.log("Show AGB");
-  }
-} 
 
-function showWRB() {
-  var x = document.getElementById("wrb-txt");
-  var y = document.getElementById("wrb-btn");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    y.classList.remove("open");
-    y.classList.add("closed");
-    console.log("Hide WRB");
+function hideStuff() {
+  hideXY("imp-txt", "imp-btn");
+  hideXY("agb-txt", "agb-btn");
+  hideXY("wrb-txt", "wrb-btn");
+  hideXY("lang_options", "lang_label");
+}
+
+function switchLanguage(currentScreen) {
+  let x = currentScreen;
+
+  if (location.pathname != "/en/"){
+    console.log("gRedirecting to " + x);
+    window.location.href = "en/" + x + ".html";
+  } else if (location.pathname == "/en/"){
+    console.log("Redirecting to " + x);
+    window.location.href = "../" + x + ".html";
   } else {
-    x.style.paddingBottom = "20px";
-    x.style.display = "block";
-    y.classList.remove("closed");
-    y.classList.add("open");
-    console.log("Show WRB");
+    console.log("Couldn't redirect to " + x);
   }
-} 
+}
+
+
+
+
+
