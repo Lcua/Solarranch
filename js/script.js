@@ -1203,6 +1203,8 @@ $document.ready(function () {
 
 
 function showXY(a, b) {
+  
+
   var x = document.getElementById(a);
   var y = document.getElementById(b);
 
@@ -1211,10 +1213,12 @@ function showXY(a, b) {
     y.classList.remove("open");
     y.classList.add("closed");
   } else {
+    hideStuff();
     x.style.paddingBottom = "20px";
     x.style.display = "block";
     y.classList.remove("closed");
     y.classList.add("open");
+    document.getElementById("footer-seperator").scrollTo();
   }
 }
 

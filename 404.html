@@ -62,15 +62,7 @@
                   <li><a href="contacts.html">Kontakt</a>
                   </li>
                 </ul>
-                <div class="contact-info">
-                  <address>
-                    <div class="unit unit-horizontal unit-spacing-xxs unit-md-align-right">
-                      <!--<div class="unit-left"><span class="text-primary-darker">TEL:</span></div>-->
-                      <div class="unit-body"><a href="callto:#" class="link link-primary-darker">0171-1864050</a></div>
-                    </div>
-                    <p>Solarranch GmbH</p>
-                  </address>
-                </div>
+
               </div>
             </div>
           </nav>
@@ -102,36 +94,29 @@
             </div>
           </div>
         </section>
+        <hr>
       </main>
-      <hr>
       <!-- Page Footer -->
-      <footer class="page-foot">
-        <section class="bg-gray-darker section-50 section-sm-top-75 section-sm-bottom-65">
-          <div class="shell">
-            <div class="range range-xs-center range-sm-justify range-sm-middle range-sm-reverse">
-              <div class="cell-sm-6 cell-lg-4 text-sm-right">
-                <div class="contact-info">
-                  <address>
-                    <p class="offset-top-15">C²EX GmbH, Kopernikusstr. 14, 30171 Hannover, Germany</p>
-                  </address>
-                </div>
-                <ul class="list-inline offset-top-15">
-                  <li><a href="#" class="link link-footer"><span class="icon icon-xs fa-facebook"></span></a></li>
-                  <li><a href="#" class="link link-footer"><span class="icon icon-xs fa-twitter"></span></a></li>
-                  <li><a href="#" class="link link-footer"><span class="icon icon-xs fa-google-plus"></span></a></li>
-                </ul>
-              </div>
-              <div class="cell-sm-6 cell-lg-4 text-sm-left"><a href="index.html" class="rd-navbar-brand">
-                  <div class="brand-name"></div></a> <span class="copyright reveal-block reveal-sm-inline-block">&#169;&nbsp;<span id="copyright-year"></span>&nbsp;<a href="privacy.html" class="link link-default">Privacy Policy</a></span>
-              </div>
+      <footer>
+        <div class="footer-grid shell">
+            <div class="logo-div-footer">
+              <a href="index.html" class="rd-navbar-brand">
+                <div class="brand-name"></div>
+              </a>&nbsp;
+              <span class="copyright reveal-block reveal-sm-inline-block">&#169;&nbsp;<span id="copyright-year"></span>
             </div>
-          </div>
-          <div class="imp-div shell">
-            <p id="imp-btn" onClick="showXY('imp-txt', 'imp-btn')">Impressum</p>
-            <p  id="imp-txt">Anschrift:<br />C²EX GmbH - Solarranch<br />Kopernikusstr.14<br />30167 Hannover<br />Deutschland<br /><br />Geschäftsführer: Tobias Jankowiak<br /><br />Handelsregisternummer: HRB 215250<br /><br />USt-IDNr.: DE 311934471<br /><br />Telefonnummer: +49 171 1864050<br /><br />E-Mail-Adresse: info@solarranch.de </p>
-          </div>
-          <div class="agb-div shell">
-            <p id="agb-btn" onClick="showXY('agb-txt', 'agb-btn')">AGB</p>
+            <div class="imp-div">
+                <p id="imp-btn" onClick="showXY('imp-txt', 'imp-btn')">Impressum</p>
+            </div>
+            <div class="agb-div">
+                <p id="agb-btn" onClick="showXY('agb-txt', 'agb-btn')">AGB</p>
+            </div>
+            <div class="wrb-div">
+                <p id="wrb-btn" onClick="showXY('wrb-txt', 'wrb-btn')">Widerrufsbelehrung</p>
+            </div>
+        </div>
+        <div id="footer-text">
+            <p id="imp-txt">Anschrift:<br />C²EX GmbH - Solarranch<br />Kopernikusstr.14<br />30167 Hannover<br />Deutschland<br /><br />Geschäftsführer: Tobias Jankowiak<br /><br />Handelsregisternummer: HRB 215250<br /><br />USt-IDNr.: DE 311934471<br /><br />Telefonnummer: +49 171 1864050<br /><br />E-Mail-Adresse: info@solarranch.de</p>
             <p id="agb-txt">Allgemeine Geschäftsbedingungen (AGB)<br /><br />
               Die nachstehenden AGB enthalten zugleich gesetzliche
               Informationen zu Ihren Rechten nach den Vorschriften über
@@ -290,9 +275,6 @@
               Wirksamkeit der übrigen Bestimmungen hierdurch nicht berührt.<br /><br />
               
               Solarranch, ein Unternehmen der C2EX GmbH.</p>
-          </div>
-          <div class="wrb-div shell">
-            <p id="wrb-btn" onClick="showXY('wrb-txt', 'wrb-btn')">Widerrufsbelehrung</p>
             <p id="wrb-txt">Widerrufsbelehrung<br /><br />
               Widerrufsrecht<br />
               Sie können Ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen mittels einer
@@ -366,9 +348,8 @@
               bei Ihnen abgeholt. Verpflichtungen zur Erstattung von Zahlungen müssen innerhalb von 30 Tagen
               erfüllt werden. Die Frist beginnt für Sie mit der Absendung Ihrer Widerrufserklärung oder der Sache,
               für uns mit deren Empfang.</p>
-          </div>
-        </section>
 
+        </div>
       </footer>
     </div>
     <!-- Global Mailform Output-->
