@@ -1203,8 +1203,6 @@ $document.ready(function () {
 
 
 function showXY(a, b) {
-  
-
   var x = document.getElementById(a);
   var y = document.getElementById(b);
 
@@ -1218,7 +1216,7 @@ function showXY(a, b) {
     x.style.display = "block";
     y.classList.remove("closed");
     y.classList.add("open");
-    document.getElementById("footer-seperator").scrollTo();
+    document.getElementById("footer-seperator").scrollIntoView();
   }
 }
 
@@ -1235,19 +1233,7 @@ function hideStuff() {
   hideXY("lang_options", "lang_label");
 }
 
-function switchLanguage(currentScreen) {
-  let x = currentScreen;
 
-  if (location.pathname != "/en/"){
-    console.log("Redirecting to " + x);
-    window.location.href = "en/" + x + ".html";
-  } else if (location.pathname == "/en/"){
-    console.log("Redirecting to " + x);
-    window.location.href = "../" + x + ".html";
-  } else {
-    console.log("Couldn't redirect to " + x);
-  }
-}
 
 
 

@@ -27325,3 +27325,8 @@ main {
 #footer-text {
   padding-top: 25px;
 }
+
+.highlighted-product {
+  padding: 40px;
+  background-color: rgb(216, 213, 213);
+}
