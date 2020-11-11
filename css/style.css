@@ -85,6 +85,8 @@
 
 :root {
   --main-text-font: 'Cairo', sans-serif; 
+  --main-heading-color: 'white';
+  --main-text-color: 'white';
 }
 
 html {
@@ -412,12 +414,12 @@ textarea {
 }
 
 a {
-  color: #2C5AA0;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #2C5AA0;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
@@ -499,7 +501,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: var(--main-text-font);
   font-weight: 700;
   line-height: 1.1;
-  color: #162D50;
+  color: var(--main-heading-color);
 }
 
 h1 small,
@@ -1232,7 +1234,7 @@ legend {
   margin-bottom: 31px;
   font-size: 30px;
   line-height: inherit;
-  color: #162D50;
+  color: var(--main-text-color);
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -3159,18 +3161,18 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.55;
-  color: #162D50;
+  color: var(--main-text-color);
   white-space: nowrap;
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #131110;
+  color: var(--main-text-color);
   background-color: #f5f5f5;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-  color: #162D50;
+  color: var(--main-text-color);
   text-decoration: none;
   outline: 0;
   background-color: #2C5AA0;
@@ -23626,7 +23628,7 @@ html:not(.lt-ie10) .not-animated {
   height: 48px;
   line-height: 48px;
   cursor: pointer;
-  color: #162D50;
+  color: black;
   background-color: transparent;
   border: none;
   display: none;
@@ -23654,7 +23656,7 @@ html:not(.lt-ie10) .not-animated {
 .rd-navbar-toggle span:after, .rd-navbar-toggle span:before, .rd-navbar-toggle span {
   width: 24px;
   height: 4px;
-  background-color: #162D50;
+  background-color: black;
   backface-visibility: hidden;
   border-radius: 2px;
 }
@@ -23707,7 +23709,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .rd-navbar-brand .brand-name {
-  color: #162D50;
+  color: black;
   font-family: var(--main-text-font);
   text-transform: uppercase;
 }
@@ -23786,7 +23788,7 @@ html:not(.lt-ie10) .not-animated {
   height: 48px;
   line-height: 48px;
   cursor: pointer;
-  color: #162D50;
+  color: black;
   text-align: center;
   font-size: 24px;
 }
@@ -23869,7 +23871,7 @@ html:not(.lt-ie10) .not-animated {
   text-align: center;
   padding: 8px;
   font-weight: 700;
-  color: #2C5AA0;
+  color: black;
   text-transform: uppercase;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -23915,12 +23917,12 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .rd-navbar-shop:hover {
-  color: #2C5AA0;
+  color: black;
 }
 
 .rd-navbar-shop:focus {
   outline: 0;
-  color: #2C5AA0;
+  color: black;
 }
 
 .contact-info .unit {
@@ -23978,7 +23980,7 @@ html:not(.lt-ie10) .not-animated {
   position: relative;
   display: block;
   padding: 40px 6px;
-  color: #162D50;
+  color: black;
   background: transparent;
   line-height: 1.2;
   font-size: 16px;
@@ -23992,14 +23994,19 @@ html:not(.lt-ie10) .not-animated {
 .rd-navbar-static .rd-navbar-nav > li > a:hover,
 .rd-navbar-fullwidth .rd-navbar-nav > li.focus > a,
 .rd-navbar-fullwidth .rd-navbar-nav > li > a:hover {
-  color: #FFF;
-  background: #162D50;
+  /*color: #FFF;*/
+  /*background: #162D50;*/
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .rd-navbar-static .rd-navbar-nav > li.active > a,
 .rd-navbar-fullwidth .rd-navbar-nav > li.active > a {
-  color: #FFF;
-  background: #162D50;
+  color: black;
+  /*background: #162D50;*/
+  font-weight: bold;
+  font-size: 18px;
+
 }
 
 .rd-navbar-static .rd-navbar-nav > .rd-navbar-submenu > ul,
