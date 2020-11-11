@@ -27247,6 +27247,16 @@ a.pswp__share--download:hover {
   .imp-div, .agb-div, .wrb-div {
     text-align: left!important;
   }
+
+  .contact-flex {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row!important;
+  }
+  
+  .contact-flex .contact-img, .contact-flex .contact-txt {
+    width: 40%;
+  }
 }
 
 .imp-div, .agb-div, .wrb-div {
@@ -27318,10 +27328,6 @@ footer {
   text-align: left;
 }
 
-main {
-  min-height: 100vh;
-}
-
 #footer-text {
   padding-top: 25px;
 }
@@ -27329,4 +27335,38 @@ main {
 .highlighted-product {
   padding: 40px;
   background-color: rgb(216, 213, 213);
+}
+
+.contact-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin-top: 50px;
+  width: 100%;
+  margin: 15px;
+}
+
+#call-btn, #mail-btn {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+  margin-right: 25px;
+}
+
+#call-btn:hover, #mail-btn:hover {
+  color: #dfdfdf;
+  border-color: #dfdfdf;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+}
+
+
+.contact-txt {
+  padding: 0;
 }
