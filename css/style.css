@@ -26112,28 +26112,7 @@ a.pswp__share--download:hover {
   padding-left: 5px;
 }
 
-#lang_options {
-  position: absolute;
-  right: 0;
-  margin-right: 40px;
-  background-color: var(--secondary-color);
-  padding: 10px 25px;
-  color: white;
-}
 
-#lang_label {
-  background-color: var(--secondary-color);
-  color: white;
-  text-align: right;
-  padding-right: 50px;
-  cursor: pointer;
-  margin-bottom: 0;
-}
-
-#lang_switch {
-  text-decoration: none;
-  color: white;
-}
 
 footer {
   padding-top: 40px;
@@ -26161,6 +26140,7 @@ footer {
 .highlighted-product {
   padding: 40px;
   background-color: rgb(216, 213, 213);
+  margin-top: 0;
 }
 
 .contact-btns {
@@ -26208,25 +26188,56 @@ footer {
   text-shadow: 1px 2px black;
 }
 
-#lang_options {
-  z-index: 999;
-}
+
 
 @media only screen and (min-width: 1200px) {
   main {
     -webkit-margin-before: 50px;
   }
+  #lang_options {
+    z-index: 999;
+  }
+  #lang_switch2 {
+    display: none;
+  }
+  #lang_options {
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    background-color: var(--secondary-color);
+    padding: 10px 25px;
+    color: white;
+  }
+  
+  #lang_label {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: right;
+    padding-right: 50px;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  
+  #lang_switch {
+    text-decoration: none;
+    color: white;
+  }
 }
 
-@media only screen and (max-width: 1199) {
-  #lang_label {
-    min-height: 40px;
+@media only screen and (max-width: 1199px) {
+  #lang_bar, #lang_bar * {
+    display: none;
+  }
+
+  .rd-navbar-brand .brand-name {
+    width: 50vw!important;
   }
 }
 
 .highlight-div {
   padding: 0 15px;
   align-items: center;
+
 }
 
 #shop-btn {
