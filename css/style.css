@@ -23761,9 +23761,18 @@ html:not(.lt-ie10) .not-animated {
   font-weight: 400;
 }
 
-.rd-navbar-brand .brand-name:before {
-  content: url(../images/logo.png);
+/*.rd-navbar-brand .brand-name:before {
+  content: url(../images/logos/logo2.png);
   display: inline-block;
+}*/
+
+.rd-navbar-brand .brand-name {
+  background-image: url(../images/logos/logo2.png);
+  background-size: contain;
+  width: 350px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .rd-navbar-dropdown {
