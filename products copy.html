@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="wide wow-animation">
-  <head>
+  <head onload="setCurrentScreen(products)">
     <!-- Site Title-->
-    <title>Partner</title>
+    <title>Produkte</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,24 +26,21 @@
           <div id="lang_div">
             <p id="lang_label" class="de_lang" onclick="showXY('lang_options', 'lang_label')">Deutsch</p>
             <div id="lang_options">
-              <a id="lang_switch" href="en/index.html">English</a>
+              <a id="lang_switch" href="en/products.html">English</a>
             </div>
           </div>
           
         </span>
         <div class="rd-navbar-wrap rd-navbar-default">
-          <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="100px"
-            data-lg-stick-up-offset="150px" data-auto-height="true" class="rd-navbar">
+          <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="100px" data-lg-stick-up-offset="150px" data-auto-height="true" class="rd-navbar">
             <div class="rd-navbar-inner">
               <div class="rd-navbar-nav-wrap-outer">
                 <!-- RD Navbar Panel-->
                 <div class="rd-navbar-panel">
                   <!-- RD Navbar Toggle-->
                   <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
-                  <!-- RD Navbar Brand-->
-                  <a href="index.html" class="rd-navbar-brand">
-                    <div class="brand-name"></div>
-                  </a>
+                  <!-- RD Navbar Brand--><a href="index.html" class="rd-navbar-brand">
+                    <div class="brand-name"></div></a>
                 </div>
               </div>
               <!-- RD Navbar Nav-->
@@ -52,13 +49,13 @@
                 <ul class="rd-navbar-nav">
                   <li><a href="index.html">Home</a>
                   </li>
-                  <li><a href="products.html">Produkte</a>
+                  <li class="active"><a href="products.html">Produkte</a>
                   </li>
                   <li><a href="http://teslaprodukte.solarhafen.com">Shop</a>
                   </li>
                   <li><a href="https://www.ebay.de/usr/solar.ranch" target="_blank">ebay</a>
                   </li>
-                  <li class="active"><a href="partners.html">Partner</a>
+                  <li><a href="partners.html">Partner</a>
                   </li>
                   <li><a href="contacts.html">Kontakt</a>
                   </li>

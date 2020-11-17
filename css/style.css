@@ -27426,3 +27426,14 @@ footer {
 .rd-parallax-layer div h3 {
   text-shadow: 1px 2px black;
 }
+
+main {
+  -webkit-margin-before: 50px;
+}
+
+
+@media only screen and (min-width: 769px) {
+  #lang_options {
+    z-index: 999;
+  }
+}
