@@ -1216,7 +1216,7 @@ function showXY(a, b) {
     x.style.display = "block";
     y.classList.remove("closed");
     y.classList.add("open");
-    document.getElementById("footer-seperator").scrollIntoView();
+    /*document.getElementById("footer-seperator").scrollIntoView();*/
   }
 }
 
