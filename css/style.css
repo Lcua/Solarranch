@@ -85,7 +85,7 @@
 
 :root {
   --main-text-font: 'Cairo', sans-serif; 
-  --primary-color: whitesmoke;
+  --primary-color: #FFF;
   --secondary-color: #5a5a5a;
 }
 
@@ -27421,4 +27421,8 @@ footer {
 
 #plant-div div h3 {
   text-align: center;
+}
+
+.rd-parallax-layer div h3 {
+  text-shadow: 1px 2px black;
 }
