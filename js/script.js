@@ -1222,6 +1222,7 @@ function showXY(a, b) {
 
 function hideXY(x, y) {
   document.getElementById(x).style.display = "none";
+  document.getElementById(y).classList.remove("open");
   document.getElementById(y).classList.add("closed");
 }
 
@@ -1230,7 +1231,6 @@ function hideStuff() {
   hideXY("imp-txt", "imp-btn");
   hideXY("agb-txt", "agb-btn");
   hideXY("wrb-txt", "wrb-btn");
-  hideXY("lang_options", "lang_label");
 }
 
 

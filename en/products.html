@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="wide wow-animation">
+<html lang="de" class="wide wow-animation">
 
 <head onload="setCurrentScreen(products)">
   <!-- Site Title-->
-  <title>Products</title>
+  <title>Produkte</title>
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport"
     content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -12,7 +12,6 @@
   <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
   <!-- Stylesheets-->
   <link rel="stylesheet" type="text/css"
-    href="//fonts.googleapis.com/css?family=Cinzel:400,700,900%7CRoboto+Condensed:300,400">
   <link rel="stylesheet" href="../css/style.css">
   <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/product-images/product-images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -27,13 +26,9 @@
     <header class="page-head">
       <!-- RD Navbar-->
       <span id="lang_bar" class="rd-navbar-inner">
-        <div id="lang_div">
-          <p id="lang_label" class="de_lang" onclick="showXY('lang_options', 'lang_label')">English</p>
-          <div id="lang_options">
-            <a id="lang_switch" href="../products.html">Deutsch</a>
-          </div>
+        <div class="lang_div">
+          <a href='../products.html' class='lang_inactive lang_option'>DE</a><p class='lang_p'>|</p><a href='products.html' class='lang_active lang_option'>EN</a>
         </div>
-
       </span>
       <div class="rd-navbar-wrap rd-navbar-default">
         <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth"
@@ -57,15 +52,15 @@
               <ul class="rd-navbar-nav">
                 <li><a href="index.html">Home</a>
                 </li>
-                <li class="active"><a href="products.html">Produkte</a>
+                <li class="active"><a href="products.html">Product</a>
                 </li>
                 <li><a href="http://solarshop.solarhafen.com">Shop</a>
                 </li>
                 <li><a href="https://www.ebay.de/usr/solar.ranch" target="_blank">ebay</a>
                 </li>
-                <li><a href="partners.html">Partner</a>
+                <li><a href="partners.html">Partners</a>
                 </li>
-                <li><a href="contacts.html">Kontakt</a>
+                <li><a href="contacts.html">Contact</a>
                 </li>
                 <li><a id="lang_switch2" href="../products.html">Deutsch</a>
                 </li>
@@ -84,12 +79,12 @@
           <div data-speed="0.3" data-type="media" data-url="../images/products-span.jpg" class="rd-parallax-layer"></div>
           <div data-speed="0.05" data-type="html" class="rd-parallax-layer">
             <div class="shell section-210 section-sm-top-130 section-sm-bottom-210 text-sm-center" style="height:400px">
-              <h3>OUR PRODUCTS</h3>
+              <h3>Unsere Produkte</h3>
             </div>
           </div>
         </div>
       </section>
-      <section class="section-75 section-sm-top-110 section-sm-bottom-130">
+      <section class="section-75 section-sm-top-110 section-sm-bottom-130 products-section">
         <div class="cell-sm-6 offset-top-80 highlighted-product">
           <div class='shell'>
             <div class=" highlight-div unit unit-lg-horizontal unit-spacing-md">
@@ -98,8 +93,10 @@
               </div>
               <div class="unit-body">
                 <div class="offset-lg-top--10"></div>
-                <h6 class="inset-lg-left-30 text-primary">BATTERY SYSTEM AS A COMPLETE SOLUTION</h6>
-                <p class="text-divider">Visit our webshop to convenienlty choose your desired configuration. It includes everything you need for a successful installation.</p>
+                <h6 class="inset-lg-left-30 text-primary">Batterieanlage als Komplettlösung</h6>
+                <p class="text-divider">Besuchen Sie unseren Webshop und wählen Sie ganz einfach Ihre gewünschte
+                  Kombination aus. Darin enthalten ist alles enthalten, was Sie für eine erfolgreiche Installation
+                  benötigen.</p>
                 <a id='shop-btn' href="https://solarshop.solarhafen.com/" target="_blank">Webshop</a>
               </div>
             </div>
@@ -116,9 +113,9 @@
                   </div>
                   <div class="unit-body">
                     <div class="offset-lg-top--10"></div>
-                    <h6 class="inset-lg-left-30 text-primary">PV INVERTER</h6>
-                    <p class="text-divider">In the PV inverter, the direct current (DC) from the solar modules is converted into alternating
-                      current (AC) for the consumers in the house grid.</p>
+                    <h6 class="inset-lg-left-30 text-primary">PV-Wechselrichter</h6>
+                    <p class="text-divider">Im PV-Wechselrichter (Inverter) wird der Gleichstrom (DC) der Solarmodule in
+                      Wechselstrom (AC) für die Verbraucher im Hausnetz umgewandelt.</p>
                   </div>
                 </div>
               </a>
@@ -131,9 +128,10 @@
                   </div>
                   <div class="unit-body">
                     <div class="offset-lg-top--10"></div>
-                    <h6 class="inset-lg-left-30 text-primary">HYBRID INVERTER</h6>
-                    <p class="text-divider">In addition to converting PV power (DC) to AC power, the hybrid inverter offers the option of
-                      charging generated power into battery storage to retrieve it when you need it.</p>
+                    <h6 class="inset-lg-left-30 text-primary">Hybrid-Wechselrichter</h6>
+                    <p class="text-divider">Der Hybrid-Wechselrichter bietet zusätzlich zum Umwandeln von PV-Strom (DC)
+                      in Wechselstrom (AC) die Möglichkeit erzeugten Strom in Batteriespeicher zu laden um ihn dann
+                      abzurufen, wenn Sie es brauchen.</p>
                   </div>
                 </div>
               </a>
@@ -146,9 +144,9 @@
                   </div>
                   <div class="unit-body">
                     <div class="offset-lg-top--10"></div>
-                    <h6 class="inset-lg-left-30 text-primary">LITHIUM BATTERIES</h6>
-                    <p class="text-divider">Self-sufficiency and self-sufficiency - two aspects that are becoming increasingly important for
-                      private households and commercial enterprises.</p>
+                    <h6 class="inset-lg-left-30 text-primary">Lithium Batterien</h6>
+                    <p class="text-divider">Eigenversorgung und Autarkie – zwei Aspekte die für private Haushalte und
+                      Gewerbebetriebe immer wichtiger werden.</p>
                   </div>
                 </div>
               </a>
@@ -161,9 +159,9 @@
                   </div>
                   <div class="unit-body">
                     <div class="offset-lg-top--10"></div>
-                    <h6 class="inset-lg-left-30 text-primary">SOLAR MODULES</h6>
-                    <p class="text-divider">It all starts with the modules on the roof of the house. With our modules from LG, REC, AEG and
-                      SunPower you always make the right choice.</p>
+                    <h6 class="inset-lg-left-30 text-primary">Solarmodule</h6>
+                    <p class="text-divider">Mit den Modulen auf dem Hausdach beginnt alles. Mit unseren Modulen von LG,
+                      REC, AEG und SunPower treffen sie immer die richtige Wahl.</p>
                   </div>
                 </div>
               </a>
