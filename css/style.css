@@ -26147,7 +26147,6 @@ footer {
 .products-section {
   margin-top: 0;
   padding-top: 0;
-  -webkit-margin-before: 50px;
 }
 
 .contact-btns {
@@ -26233,6 +26232,10 @@ footer {
   #lang_switch {
     text-decoration: none;
     color: white;
+  }
+
+  .products-section {
+    -webkit-margin-before: 50px;
   }
 }
 
