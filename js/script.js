@@ -1231,6 +1231,7 @@ function hideStuff() {
   hideXY("imp-txt", "imp-btn");
   hideXY("agb-txt", "agb-btn");
   hideXY("wrb-txt", "wrb-btn");
+  hideXY("ds-txt", "ds-btn");
 }
 
 

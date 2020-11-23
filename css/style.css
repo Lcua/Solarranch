@@ -26058,10 +26058,28 @@ a.pswp__share--download:hover {
   width: 90%;
 }
 
-@media (min-width: 768px) {
+@media only screen and (max-width: 767px) {
   .footer-grid {
-    grid-template-columns: 5fr 1fr 1fr 1fr!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-grid {
+    /*grid-template-columns: 5fr 1fr 1fr 1fr!important;*/
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-div-footer {
+    margin-right: auto;
+  }
+
   .partner-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -26069,8 +26087,9 @@ a.pswp__share--download:hover {
   .partner-img {
     width: 70%;
   }
-  .imp-div, .agb-div, .wrb-div {
+  .imp-div, .agb-div, .wrb-div, .ds-div {
     text-align: left!important;
+    margin-left: 20px;
   }
   .contact-flex {
     display: flex;
@@ -26084,29 +26103,29 @@ a.pswp__share--download:hover {
 
 
 
-.imp-div, .agb-div, .wrb-div {
+.imp-div, .agb-div, .wrb-div, .ds-div {
   text-align: center;
 }
 
-#imp-btn, #agb-btn, #wrb-btn, #lang_switch {
+#imp-btn, #agb-btn, #wrb-btn, #lang_switch, #ds-btn {
   cursor: pointer;
 }
 
-#imp-btn.open, #agb-btn.open, #wrb-btn.open {
+#imp-btn.open, #agb-btn.open, #wrb-btn.open, #ds-btn.open {
   font-weight: bold;
 }
 
-#imp-btn.closed::after, #agb-btn.closed::after, #wrb-btn.closed::after, #lang_label.closed::after {
+#imp-btn.closed::after, #agb-btn.closed::after, #wrb-btn.closed::after, #lang_label.closed::after, #ds-btn.closed::after {
   content: "\f107";
   font-family: FontAwesome;
   padding-left: 5px;
 }
 
-#imp-btn.closed, #agb-btn.closed, #wrb-btn.closed {
+#imp-btn.closed, #agb-btn.closed, #wrb-btn.closed, #ds-btn.closed {
   font-weight: unset;
 }
 
-#imp-btn.open::after, #agb-btn.open::after, #wrb-btn.open::after, #lang_label.open::after {
+#imp-btn.open::after, #agb-btn.open::after, #wrb-btn.open::after, #lang_label.open::after, #ds-btn.open::after {
   content: "\f106";
   font-family: FontAwesome;
   padding-left: 5px;
@@ -26119,12 +26138,9 @@ footer {
   min-height: 10vh;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-}
 
-#imp-btn, #agb-btn, #wrb-btn {
+
+#imp-btn, #agb-btn, #wrb-btn, #ds-btn {
   text-align: center;
 }
 
@@ -26251,6 +26267,8 @@ footer {
   #plant-div {
     padding-top: 50px;
   }
+
+
 }
 
 .highlight-div {
