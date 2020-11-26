@@ -22933,10 +22933,11 @@ html:not(.lt-ie10) .not-animated {
   /*background: #162D50;*/
   font-weight: bold;
   font-size: 18px;
+  color: #6aafd0;
 }
 
 .rd-navbar-static .rd-navbar-nav>li.active>a, .rd-navbar-fullwidth .rd-navbar-nav>li.active>a {
-  color: black;
+  color: #6aafd0;
   /*background: #162D50;*/
   font-weight: bold;
   font-size: 18px;
