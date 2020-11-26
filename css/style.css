@@ -26360,3 +26360,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.bottom-product {
+  margin-top: 150px;
+}
