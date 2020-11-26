@@ -22669,7 +22669,7 @@ html:not(.lt-ie10) .not-animated {
   background-image: url(../images/logos/logo3.png);
   background-size: contain;
   width: 250px;
-  height: 40px;
+  height: 50px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -26349,4 +26349,14 @@ footer {
 
 .featured-img {
   border-radius: 15px;
+}
+
+.product-tile {
+  height: 100%;
+}
+
+.product-tile .unit-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
