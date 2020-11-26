@@ -22664,9 +22664,9 @@ html:not(.lt-ie10) .not-animated {
 }*/
 
 .rd-navbar-brand .brand-name {
-  background-image: url(../images/logos/logo2.png);
+  background-image: url(../images/logos/logo3.png);
   background-size: contain;
-  width: 350px;
+  width: 250px;
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
@@ -26196,7 +26196,7 @@ footer {
 
 .contact-section {
   -webkit-margin-before: 50px;
-
+  min-height: 50vh;
 }
 
 .contact-txt {
@@ -26282,16 +26282,27 @@ footer {
   background-color: #6aafd0;
   transition: .3s cubic-bezier(1, .38, 0, .66);
   font-family: var(--main-text-font);
-  padding: 5px 25px;
+  padding: 5px 50px;
+  padding-left: 35px;
   margin-top: 25px;
   border-radius: 15px;
   border: none;
-  float: right;
+  float: left;
 }
 
 #shop-btn:hover {
   color: var(--primary-color);
   background-color: #71c1e6;
+}
+
+#shop-btn:before {
+  font-family: FontAwesome;
+  content: '\f105';
+  padding-right: 15px;
+}
+
+#shop-btn:hover + #shop-btn:before {
+  padding-right: 20px;
 }
 
 .index-page-content {
