@@ -87,6 +87,8 @@
   --main-text-font: 'Cairo', sans-serif;
   --primary-color: #FFF;
   --secondary-color: #5a5a5a;
+  --accent-color: #6aafd0;
+  --focus-color: #71c1e6;
 }
 
 html {
@@ -22933,11 +22935,11 @@ html:not(.lt-ie10) .not-animated {
   /*background: #162D50;*/
   font-weight: bold;
   font-size: 18px;
-  color: #6aafd0;
+  color: var(--accent-color);
 }
 
 .rd-navbar-static .rd-navbar-nav>li.active>a, .rd-navbar-fullwidth .rd-navbar-nav>li.active>a {
-  color: #6aafd0;
+  color: var(--accent-color);
   /*background: #162D50;*/
   font-weight: bold;
   font-size: 18px;
@@ -24924,7 +24926,7 @@ ul ul, ul ol, ol ul, ol ol {
   font-size: 24px;
   line-height: 46px;
   color: var(--primary-color);
-  background-color: #6aafd0;
+  background-color: var(--accent-color);
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -24940,7 +24942,7 @@ ul ul, ul ol, ol ul, ol ol {
 
 .ui-to-top:hover {
   color: var(--primary-color);
-  background: #71c1e6;
+  background: var(--focus-color);
   text-decoration: none;
 }
 
@@ -26114,6 +26116,7 @@ a.pswp__share--download:hover {
 
 #imp-btn.open, #agb-btn.open, #wrb-btn.open, #ds-btn.open {
   font-weight: bold;
+  color: var(--accent-color);
 }
 
 #imp-btn.closed::after, #agb-btn.closed::after, #wrb-btn.closed::after, #lang_label.closed::after, #ds-btn.closed::after {
@@ -26280,7 +26283,7 @@ footer {
 
 #shop-btn {
   color: var(--primary-color);
-  background-color: #6aafd0;
+  background-color: var(--accent-color);
   transition: .3s cubic-bezier(1, .38, 0, .66);
   font-family: var(--main-text-font);
   padding: 5px 50px;
@@ -26293,17 +26296,13 @@ footer {
 
 #shop-btn:hover {
   color: var(--primary-color);
-  background-color: #71c1e6;
+  background-color: var(--focus-color);
 }
 
 #shop-btn:before {
   font-family: FontAwesome;
   content: '\f105';
   padding-right: 15px;
-}
-
-#shop-btn:hover + #shop-btn:before {
-  padding-right: 20px;
 }
 
 .index-page-content {
@@ -26326,7 +26325,7 @@ footer {
 
 .lang_option.lang_active, .lang_option.lang_inactive:hover {
   font-size: 18px;
-  color: #6aafd0;
+  color: var(--accent-color);
   font-weight: bold;
 }
 
@@ -26346,4 +26345,8 @@ footer {
 .contact-flex {
   justify-content: center;
   text-align: center;
+}
+
+.featured-img {
+  border-radius: 15px;
 }
