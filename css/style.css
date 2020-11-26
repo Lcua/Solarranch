@@ -26364,3 +26364,11 @@ footer {
 .bottom-product {
   margin-top: 150px;
 }
+
+.contact-btn {
+  color: var(--accent-color);
+}
+
+.contact-btn:hover {
+  color: var(--focus-color);
+}
